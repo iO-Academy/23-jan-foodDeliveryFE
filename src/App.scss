@@ -1,0 +1,16 @@
+@import './variables';
+
+#headerImg {
+  background-image: url('burger.jpg');
+  background-size: cover;
+  height: 300px;
+  background-position: center;
+}
+
+h1 {
+  color: $primary-color;
+}
+
+footer {
+  font-size: 8px;
+}

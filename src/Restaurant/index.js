@@ -1,11 +1,11 @@
 import './styles.scss';
-const RestaurantDisplay = ({ restaurant }) => {
+const Restaurant = ({ restaurantData }) => {
     return (
         <>
             <div className='restaurant col-lg-3 col-12'>
-                <h1>{ restaurant.name }</h1>
+                <h1>{ restaurantData.name }</h1>
             </div>
         </>
     )
 }
-export default RestaurantDisplay;
+export default Restaurant;

@@ -1,5 +1,5 @@
 import {useEffect, useState} from 'react';
-import RestaurantDisplay from '../RestaurantDisplay';
+import Restaurant from '../Restaurant';
 
 const RestaurantPage = () => {
 
@@ -19,7 +19,7 @@ const RestaurantPage = () => {
     return (
         <>
                 <section className='row'>
-                    {restaurants.map(restaurant => <RestaurantDisplay restaurant={ restaurant } />)}
+                    {restaurants.map(restaurant => <Restaurant restaurantData={ restaurant } />)}
                 </section>
 
         </>
