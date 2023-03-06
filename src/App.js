@@ -1,5 +1,6 @@
-import './App.css';
+import './App.scss';
 import {useEffect, useState} from "react";
+import RestaurantDisplay from "./RestaurantDisplay";
 
 function App() {
 
@@ -17,15 +18,14 @@ function App() {
         getRestaurants()
     }, [])
 
-
     return (
         <>
-            <ul>
-                {restaurants.map(restaurant => <li>{restaurant.name} </li> )}
-            </ul>
+            <main class="container">
+                <section class="row">
+                    {restaurants.map(restaurant => <RestaurantDisplay restaurant={ restaurant } />)}
+                </section>
+            </main>
         </>
     )
-
 }
-
 export default App;
