@@ -1,6 +1,6 @@
 import {useEffect, useState} from 'react';
 import Restaurant from '../Restaurant';
-import Hero from "../Hero";
+import Hero from '../Hero';
 
 const RestaurantPage = ({setRestaurantId, restaurantId}) => {
 

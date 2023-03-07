@@ -1,7 +1,7 @@
 import './styles.scss';
-import {useEffect, useState} from "react";
-import Hero from "../Hero";
-import Restaurant from "../Restaurant";
+import {useEffect, useState} from 'react';
+import Hero from '../Hero';
+import Restaurant from '../Restaurant';
 const OrderPage = ({ restaurantId }) => {
 
     const [menu, setMenu] = useState([])
