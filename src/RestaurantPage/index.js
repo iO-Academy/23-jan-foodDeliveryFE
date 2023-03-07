@@ -19,7 +19,7 @@ const RestaurantPage = () => {
     return (
         <>
                 <section className='row'>
-                    {restaurants.map(restaurant => <Restaurant restaurantData={ restaurant } />)}
+                    {restaurants.map(restaurant => <Restaurant key={restaurant.id} restaurantData={ restaurant } />)}
                 </section>
 
         </>
