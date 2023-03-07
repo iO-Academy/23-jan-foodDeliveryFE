@@ -12,16 +12,13 @@ const OrderPage = () => {
             })
     }
 
-    useEffect((getMenu) => {
-    }, [])
-
-getMenu()
+    useEffect ( () => {getMenu ()}
+    , [menu])
 
     return (
-        <>
+        <div className="row">
             {menu.map(menuItem => <MenuItem key={menuItem.index} menuItemData = {menuItem} /> ) }
-
-        </>
+        </div>
     )
 }
 export default OrderPage;
