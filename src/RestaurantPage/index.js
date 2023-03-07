@@ -1,7 +1,8 @@
 import {useEffect, useState} from 'react';
 import Restaurant from '../Restaurant';
+import Hero from "../Hero";
 
-const RestaurantPage = () => {
+const RestaurantPage = ({setRestaurantId, restaurantId}) => {
 
     const [restaurants, setRestaurants] = useState([])
     const getRestaurants = () => {
@@ -18,10 +19,11 @@ const RestaurantPage = () => {
 
     return (
         <>
-                <section className='row'>
-                    {restaurants.map(restaurant => <Restaurant key={restaurant.id} restaurantData={ restaurant } />)}
-                </section>
+            <Hero heroHeader='Food. Delivered' restaurantId={restaurantId}/>
 
+            <section className='row'>
+                {restaurants.map(restaurant => <Restaurant key={restaurant.id} restaurantData={ restaurant } setRestaurantId={setRestaurantId}/>)}
+            </section>
         </>
     )
 }
