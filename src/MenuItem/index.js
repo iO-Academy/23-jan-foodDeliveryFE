@@ -6,22 +6,22 @@ const MenuItem = ({menuItemData}) => {
             <div className="card shadow mb-3 border-dark">
                 <div className="card-body">
                     <h4 className="card-title">{menuItemData.foodName}</h4>
-                    <ul className="list-unstyled">
-                        <li className="list-group-item  rounded fw-bold"><span class='calories badge'>Calories: {menuItemData.calories}</span></li>
+                    <ul className="list-unstyled list-inline">
+                        <li className="rounded fw-bold list-inline-item"><span class='calories badge'>Calories: {menuItemData.calories}</span></li>
                         {menuItemData.foodType &&
-                            <li className="list-group-item rounded fw-bold"><span className='type badge'>Type: {menuItemData.foodType}</span></li>
+                            <li className="rounded fw-bold list-inline-item"><span className='type badge'>Type: {menuItemData.foodType}</span></li>
                         }
                         {!menuItemData.foodType &&
-                            <li className="d-none"></li>
+                            <li className="d-none list-inline-item"></li>
                         }
                         {menuItemData.sideItem &&
-                            <li className="list-group-item rounded fw-bold"><span className='side badge'>Side</span></li>
+                            <li className="rounded fw-bold list-inline-item"><span className='side badge'>Side</span></li>
                         }
                         {!menuItemData.sideItem &&
-                            <li className="d-none"></li>
+                            <li className="d-none list-inline-item"></li>
                         }
                     </ul>
-                    <p className="fw-bold">£ {menuItemData.price} </p>
+                    <p className="fw-bold">£ {menuItemData.price.toFixed(2)} </p>
                 </div>
             </div>
         </div>
