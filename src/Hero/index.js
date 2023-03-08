@@ -1,5 +1,3 @@
-import App from "../App";
-
 const Hero = ({heroHeader, restaurantId}) => {
 
     return (
