@@ -9,7 +9,7 @@ const App = () => {
 
     return (
         <main className='container-fluid'>
-            <Nav />
+            <Nav restaurantId={restaurantId} setRestaurantId={setRestaurantId} />
 
             {restaurantId &&
                 <OrderPage restaurantId={restaurantId} />
