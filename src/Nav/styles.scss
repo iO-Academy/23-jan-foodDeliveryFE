@@ -1,0 +1,23 @@
+@import '../variables';
+
+.navbar-brand span {
+  color: $primary-color;
+}
+
+.navbar button {
+  all: unset;
+  color: $secondary-color;
+  cursor: pointer;
+  padding: 0 0.5rem;
+
+  &:focus {
+    outline: auto 0.5rem;
+  }
+  &:hover {
+    outline: auto 0.5rem;
+  }
+}
+
+.navbar {
+  box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
+}

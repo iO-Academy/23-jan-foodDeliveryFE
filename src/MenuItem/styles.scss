@@ -1,0 +1,16 @@
+@import '../variables';
+
+.calories {
+    background-color: $primary-color;
+    color: $pill-text;
+}
+
+.type {
+    background-color: $secondary-color;
+    color: $pill-text;
+}
+
+.side {
+    background-color: $side-color;
+    color: $side-text-color;
+}

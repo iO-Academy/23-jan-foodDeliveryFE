@@ -1,8 +1,17 @@
-import './index.scss'
-function Nav() {
+import './styles.scss'
+function Nav({restaurantId, setRestaurantId}) {
+    const handleClick = () => {
+        setRestaurantId(null)
+    }
+
     return (
-        <nav className='navbar justify-content-center navbar-expand-lg justify-content-lg-start navbar-light bg-light'>
-            <h4 className='navbar-brand my-auto mx-4'><span>Food</span>Delivery</h4>
+        <nav className='row'>
+            <div className="col navbar navbar-light bg-light px-4 justify-content-center justify-content-lg-between flex-column flex-lg-row align-items-center">
+                <h4 className='navbar-brand'><span>Food</span>Delivery</h4>
+                {restaurantId &&
+                    <button onClick={handleClick}>&lt;&lt;Change Restaurant</button>
+                }
+            </div>
         </nav>
     )
 }
