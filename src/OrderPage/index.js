@@ -12,12 +12,11 @@ const OrderPage = () => {
             })
     }
 
-    useEffect ( () => {getMenu ()}
-    , [menu])
+    useEffect (getMenu, [menu])
 
     return (
         <div className="row">
-            {menu.map(menuItem => <MenuItem key={menuItem.index} menuItemData = {menuItem} /> ) }
+            {menu.map(menuItem => <MenuItem key={menuItem.index} menuItemData={menuItem} />)}
         </div>
     )
 }
