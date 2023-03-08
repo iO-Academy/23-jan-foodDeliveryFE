@@ -19,7 +19,7 @@ const OrderPage = ({restaurantId}) => {
         <>
             <Hero heroHeader={menu.restaurant} restaurantId={restaurantId} />
             {'foodItems' in menu &&
-                <div className='row'>
+                <div className='row p-1'>
                     {menu.foodItems.map((menuItem, index) => <MenuItem key={index} menuItemData={menuItem} />)}
                 </div>
             }

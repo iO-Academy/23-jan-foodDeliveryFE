@@ -1,13 +1,17 @@
 import './styles.scss'
 function Nav({restaurantId, setRestaurantId}) {
-    const back = () => {
+    const handleClick = () => {
         setRestaurantId(null)
     }
 
     return (
-        <nav className='navbar justify-content-center justify-content-lg-between flex-column flex-lg-row navbar-light bg-light px-4 align-items-center'>
-            <h4 className='navbar-brand'><span>Food</span>Delivery</h4>
-            {restaurantId && <button onClick={back}>&lt;&lt;Change Restaurant</button>}
+        <nav className='row'>
+            <div className="col navbar navbar-light bg-light px-4 justify-content-center justify-content-lg-between flex-column flex-lg-row align-items-center">
+                <h4 className='navbar-brand'><span>Food</span>Delivery</h4>
+                {restaurantId &&
+                    <button onClick={handleClick}>&lt;&lt;Change Restaurant</button>
+                }
+            </div>
         </nav>
     )
 }
