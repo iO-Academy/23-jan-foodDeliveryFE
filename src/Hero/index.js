@@ -1,3 +1,5 @@
+import './styles.scss';
+
 const Hero = ({heroHeader, restaurantId}) => {
 
     return (

@@ -1,5 +1,4 @@
 import './styles.scss';
-
 const Restaurant = ({restaurantData, setRestaurantId}) => {
 
     const handleClick = () => {
