@@ -22,7 +22,7 @@ const RestaurantPage = ({setRestaurantId, restaurantId}) => {
             <Hero heroHeader='Food. Delivered' restaurantId={restaurantId}/>
 
             <section className='row'>
-                {restaurants.map(restaurant => <Restaurant key={restaurant.id} restaurantData={ restaurant } setRestaurantId={setRestaurantId}/>)}
+                {restaurants.map(restaurant => <Restaurant key={restaurant.id} restaurantData={restaurant} setRestaurantId={setRestaurantId}/>)}
             </section>
         </>
     )

@@ -1,8 +1,7 @@
 import './styles.scss';
 import {useEffect, useState} from 'react';
 import Hero from '../Hero';
-import Restaurant from '../Restaurant';
-const OrderPage = ({ restaurantId }) => {
+const OrderPage = ({restaurantId}) => {
 
     const [menu, setMenu] = useState([])
 
@@ -16,7 +15,7 @@ const OrderPage = ({ restaurantId }) => {
 
     useEffect(() => {
         getMenu()
-    }, [menu])
+    }, [restaurantId])
 
     return (
             <Hero heroHeader={menu.restaurant} restaurantId={restaurantId}/>

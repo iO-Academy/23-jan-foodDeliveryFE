@@ -1,7 +1,6 @@
 import RestaurantPage from './RestaurantPage';
 import Nav from "./Nav";
 import "./App.scss"
-import Hero from "./Hero";
 import {useState} from "react";
 import OrderPage from "./OrderPage";
 const App = () => {
@@ -16,7 +15,7 @@ const App = () => {
                 <OrderPage restaurantId={restaurantId} />
             }
             {!restaurantId &&
-                <RestaurantPage setRestaurantId={setRestaurantId } restaurantId={restaurantId}  />
+                <RestaurantPage setRestaurantId={setRestaurantId} restaurantId={restaurantId}  />
             }
 
             <footer className='border-top mt-3'>
