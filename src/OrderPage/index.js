@@ -5,6 +5,8 @@ import MenuItem from "../MenuItem";
 
 const OrderPage = ({restaurantId}) => {
     const [menu, setMenu] = useState({})
+    const [order, setOrder] = useState({0:1, 2:3})
+
     const getMenu = () => {
         fetch(`http://localhost:8080/restaurants/${restaurantId}`)
             .then(data => data.json())

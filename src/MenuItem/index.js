@@ -1,4 +1,5 @@
 import './styles.scss';
+import ItemCounter from "../ItemCounter";
 
 const MenuItem = ({menuItemData}) => {
     return (
@@ -15,7 +16,10 @@ const MenuItem = ({menuItemData}) => {
                             <li className="rounded fw-bold list-inline-item"><span className='side badge'>Side</span></li>
                         }
                     </ul>
-                    <p className="fw-bold">£ {menuItemData.price.toFixed(2)} </p>
+                    <div className='d-flex justify-content-between align-items-baseline'>
+                        <p className='fw-bold'>£ {menuItemData.price.toFixed(2)} </p>
+                        <ItemCounter />
+                    </div>
                 </div>
             </div>
         </div>
