@@ -7,8 +7,19 @@ const MenuItem = ({ menuItemData }) => {
                 <div className="card-body">
                     <h4 className="card-title">{ menuItemData.foodName }</h4>
                     <ul className="list-unstyled">
-                        <li className="list-group-item calories rounded fw-bold">Calories: { menuItemData.calories }</li>
-                        <li className="list-group-item type rounded fw-bold">Type: { menuItemData.foodType }</li>
+                        <li className="list-group-item  rounded fw-bold"><span class='calories badge'>Calories: { menuItemData.calories }</span></li>
+                        {menuItemData.foodType &&
+                            <li className="list-group-item rounded fw-bold"><span className='type badge'>Type: { menuItemData.foodType }</span></li>
+                        }
+                        {!menuItemData.foodType &&
+                            <li></li>
+                        }
+                        {menuItemData.sideItem &&
+                            <li className="list-group-item rounded fw-bold"><span className='side badge'>Side</span></li>
+                        }
+                        {!menuItemData.sideItem &&
+                            <li></li>
+                        }
                     </ul>
                     <p className="fw-bold">£ { menuItemData.price} </p>
                 </div>
@@ -16,6 +27,9 @@ const MenuItem = ({ menuItemData }) => {
         </div>
     )
 }
+
+
+
 
 
 export default MenuItem;

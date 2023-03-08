@@ -5,7 +5,7 @@ const OrderPage = () => {
 
     const [menu, setMenu] = useState([])
     const getMenu = () => {
-        fetch('http://localhost:8080/restaurants/1')
+        fetch('http://localhost:8080/restaurants/5')
             .then(data => data.json())
             .then(menu => {
                 setMenu(menu.foodItems)
