@@ -12,7 +12,7 @@ const ItemCounter = () => {
         if (count >= 1) {
         setCount(count - 1)
         } else {
-            setCount(count = 0)
+            setCount(0)
         }
     }
 
