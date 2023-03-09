@@ -3,8 +3,8 @@ const ItemCounter = ({order, setOrder, index}) => {
     const handleClickPlus = () => {
         let tempOrder = {...order}
 
-        if (index in tempOrder){
-            tempOrder[index]= parseInt(tempOrder[index]) +1
+        if (index in tempOrder) {
+            tempOrder[index] = parseInt(tempOrder[index]) + 1
         } else {
             tempOrder[index] = 1
         }

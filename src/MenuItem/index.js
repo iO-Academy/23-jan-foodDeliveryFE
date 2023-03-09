@@ -1,7 +1,7 @@
 import './styles.scss';
 import ItemCounter from "../ItemCounter";
 
-const MenuItem = ({menuItemData,order,setOrder,index}) => {
+const MenuItem = ({menuItemData, order, setOrder, index}) => {
     return (
         <div className="col-12 col-md-4 col-lg-2">
             <div className="card shadow mb-3 border-dark">
