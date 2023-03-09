@@ -1,7 +1,7 @@
 import './styles.scss';
 import ItemCounter from "../ItemCounter";
 
-const MenuItem = ({menuItemData,order,setOrder}) => {
+const MenuItem = ({menuItemData,order,setOrder,index}) => {
     return (
         <div className="col-12 col-md-4 col-lg-2">
             <div className="card shadow mb-3 border-dark">
@@ -18,7 +18,7 @@ const MenuItem = ({menuItemData,order,setOrder}) => {
                     </ul>
                     <div className='d-flex justify-content-between align-items-end'>
                         <p className='fw-bold'>£ {menuItemData.price.toFixed(2)} </p>
-                        <ItemCounter order={order} setOrder={setOrder} />
+                        <ItemCounter order={order} setOrder={setOrder} index={index} />
                     </div>
                 </div>
             </div>
