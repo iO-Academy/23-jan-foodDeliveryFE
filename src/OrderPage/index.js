@@ -2,6 +2,7 @@ import './styles.scss';
 import {useEffect, useState} from 'react';
 import Hero from '../Hero';
 import MenuItem from "../MenuItem";
+import OrderTotal from "../OrderTotal";
 
 const OrderPage = ({restaurantId}) => {
     const [menu, setMenu] = useState({})
@@ -19,6 +20,7 @@ const OrderPage = ({restaurantId}) => {
 
     return (
         <>
+            <OrderTotal menu={menu} order={order}/>
             <Hero heroHeader={menu.restaurant} restaurantId={restaurantId} />
             {'foodItems' in menu &&
                 <div className='row p-1'>
