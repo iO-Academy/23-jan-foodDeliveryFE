@@ -26,7 +26,7 @@ const OrderPage = ({restaurantId}) => {
                     <div className='row col-lg-9'>
                         {menu.foodItems.map((menuItem, index) => <MenuItem key={index} index={index} menuItemData={menuItem} order={order} setOrder={setOrder}/>)}
                     </div>
-                    <div className='col-lg-3 col-sm-12 order-summary-container'>
+                    <div className='row col-lg-3 col-sm-12 order-summary-container bg-light'>
                         <OrderSummary order={order} menu={menu} setOrder={setOrder}/>
                     </div>
                 </div>

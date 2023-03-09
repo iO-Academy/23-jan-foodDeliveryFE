@@ -16,7 +16,7 @@ const MenuItem = ({menuItemData, order, setOrder, index}) => {
                             <li className="rounded fw-bold list-inline-item"><span className='side badge'>Side</span></li>
                         }
                     </ul>
-                    <div className='d-flex justify-content-between align-items-end'>
+                    <div className='d-md-flex justify-content-between align-items-end d-lg-block'>
                         <p className='fw-bold'>£ {menuItemData.price.toFixed(2)} </p>
                         <ItemCounter order={order} setOrder={setOrder} index={index} />
                     </div>
