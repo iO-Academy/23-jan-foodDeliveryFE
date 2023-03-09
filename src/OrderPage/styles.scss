@@ -1,3 +1,15 @@
 .foodItems {
   padding: 0.1rem;
 }
+
+@media only screen and (max-width: 992px) {
+  .order-summary-container {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+  }
+  .trolley {
+    max-width: 100px;
+  }
+}
+
