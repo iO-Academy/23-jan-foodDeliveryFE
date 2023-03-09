@@ -1,5 +1,3 @@
-
-
 const ItemCounter = ({order, setOrder, index}) => {
 
     const handleClickPlus = () => {
