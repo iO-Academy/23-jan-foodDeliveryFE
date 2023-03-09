@@ -16,7 +16,7 @@ const MenuItem = ({menuItemData}) => {
                             <li className="rounded fw-bold list-inline-item"><span className='side badge'>Side</span></li>
                         }
                     </ul>
-                    <div className='d-flex justify-content-between align-items-baseline'>
+                    <div className='d-flex justify-content-between align-items-end'>
                         <p className='fw-bold'>£ {menuItemData.price.toFixed(2)} </p>
                         <ItemCounter />
                     </div>
