@@ -1,11 +1,24 @@
 import {useState} from "react";
 
-const ItemCounter = () => {
+const ItemCounter = (order,setOrder) => {
 
     const [count, setCount] = useState(0)
 
     const handleClickPlus = () => {
         setCount(count + 1)
+
+        let tempKey = 11
+
+        let tempOrder = order
+
+        if (tempKey in tempOrder){
+            tempOrder[tempKey]=tempKey[tempKey]+1
+            setOrder(tempOrder)
+        }
+        else {
+            tempOrder[tempKey] = 1
+            setOrder(tempOrder)
+        }
     }
 
     const handleClickMinus = () => {
@@ -13,6 +26,21 @@ const ItemCounter = () => {
         setCount(count - 1)
         } else {
             setCount(0)
+        }
+
+        let tempOrder = order
+
+        let tempKey = 11
+
+        if (tempKey in tempOrder){
+            if (tempOrder[tempKey]=1){
+                delete tempOrder[tempKey]
+                setOrder(tempOrder)
+            }
+            else{
+                tempOrder[tempKey]=tempKey[tempKey]-1
+                setOrder(tempOrder)
+            }
         }
     }
 
