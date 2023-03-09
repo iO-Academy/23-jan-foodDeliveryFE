@@ -5,7 +5,7 @@ import MenuItem from "../MenuItem";
 
 const OrderPage = ({restaurantId}) => {
     const [menu, setMenu] = useState({})
-    const [order, setOrder] = useState({0:1, 2:3})
+    const [order, setOrder] = useState({})
 
     const getMenu = () => {
         fetch(`http://localhost:8080/restaurants/${restaurantId}`)
@@ -22,7 +22,7 @@ const OrderPage = ({restaurantId}) => {
             <Hero heroHeader={menu.restaurant} restaurantId={restaurantId} />
             {'foodItems' in menu &&
                 <div className='row p-1'>
-                    {menu.foodItems.map((menuItem, index) => <MenuItem key={index} menuItemData={menuItem} order={order} setOrder={setOrder}/>)}
+                    {menu.foodItems.map((menuItem, index) => <MenuItem key={index} index={index} menuItemData={menuItem} order={order} setOrder={setOrder}/>)}
                 </div>
             }
         </>
