@@ -1,6 +1,12 @@
-# Getting Started with Create React App
+# Food Delivery App Front-End
+
+This is a React based front-end for a food delivery app, it was built for an already existing API ([Food Delivery API](https://github.com/iO-Academy/food-delivery-api)). It allows the user to select a resturant and then add items from that resturant's menu to an order. They can also modify their order from either the main resturant page or the order sidebar with the current state being synced between the two components.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Dependencies
+
+This needs the [Food Delivery API](https://github.com/iO-Academy/food-delivery-api) running locally to function. Please see this repo for instructions on how to set up.
 
 ## Available Scripts
 
@@ -39,32 +45,10 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+##Authors
+Groundhogs January 2023:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+HadertS nesclark Yas-Shen Joperes-ym randallcoding alreuben Steph-ski
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+##Acknowledgments
+This build is dedicated to charliecog and Groundhogs everywhere.
